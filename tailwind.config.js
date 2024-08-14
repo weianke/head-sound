@@ -7,10 +7,36 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        satisfy: ["Satisfy", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        primary: "#f50b0a",
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
+      animation: {
+        "spin-superslow": "spin 18s linear infinite",
+        rocket: "rocket 3s linear infinite",
+      },
+      keyframes: {
+        rocket: {
+          "0%, 100%": {
+            transform: "rotate(-20deg) translate(0px, 0px)",
+          },
+          "50%": {
+            transform: "rotate(2deg) translate(50px, 50px)",
+          },
+        },
       },
     },
   },
