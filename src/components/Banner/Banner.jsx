@@ -38,7 +38,7 @@ const Banner = () => {
                 <button className="btn text-xs py-3 md:text-base">
                   know more
                 </button>
-                <button className="border border-white/50 rounded-lg px-4 text-xs md:text-base flex items-center gap-2 md:py-3">
+                <button className="border border-white/50 rounded-lg px-4  py-3 text-xs md:text-base flex items-center gap-2 md:py-3">
                   <FiDownload /> Download Resume
                 </button>
               </div>
