@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import React from "react";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
 
@@ -29,10 +29,11 @@ export const NavLinks = [
 ];
 const Navbar = () => {
   const pathname = usePathname();
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = React.useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+    console.log(showMenu, "showMenu");
   };
   return (
     <nav className="bg-black text-white">

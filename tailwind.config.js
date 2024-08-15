@@ -25,7 +25,7 @@ module.exports = {
         },
       },
       animation: {
-        "spin-superslow": "spin 18s linear infinite",
+        "spin-superslow": "spin 4s linear infinite",
         rocket: "rocket 3s linear infinite",
       },
       keyframes: {
