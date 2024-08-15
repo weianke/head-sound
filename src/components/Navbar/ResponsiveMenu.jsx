@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { NavLinks } from "./Navbar";
 
-const ResponsiveMenu = ({ showMenu }) => {
+const ResponsiveMenu = ({ showMenu, onClose }) => {
+  const handleLink = () => {
+    onClose(false);
+  };
   return (
     <div className="md:hidden">
       <div
@@ -19,6 +22,7 @@ const ResponsiveMenu = ({ showMenu }) => {
                     <Link
                       className="text-2xl font-medium text-white"
                       href={link.link}
+                      onClick={handleLink}
                     >
                       {link.title}
                     </Link>

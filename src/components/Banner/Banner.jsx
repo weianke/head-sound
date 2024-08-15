@@ -16,7 +16,12 @@ const Banner = () => {
           className="bg-gray-950 rounded-3xl py-14 px-5 grid grid-cols-1 md:grid-cols-2 space-y-2 md:space-y-0 translate-y-36"
         >
           {/*banner image*/}
-          <div className="flex items-end">
+          <div
+            className="flex items-end"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
             <Image
               src={BannerImg}
               alt="banner image"

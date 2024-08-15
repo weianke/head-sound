@@ -12,11 +12,6 @@ export const NavLinks = [
     link: "/",
   },
   {
-    id: 2,
-    title: "Contact",
-    link: "/contact",
-  },
-  {
     id: 3,
     title: "Projects",
     link: "/projects",
@@ -81,7 +76,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* mobile sidebar menu*/}
-      <ResponsiveMenu showMenu={showMenu} />
+      <ResponsiveMenu showMenu={showMenu} onClose={toggleMenu} />
     </nav>
   );
 };
