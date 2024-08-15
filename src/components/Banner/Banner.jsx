@@ -1,8 +1,7 @@
 import Image from "next/image";
+import { FiDownload } from "react-icons/fi";
 import Grains from "../../assets/grains.png";
 import BannerImg from "../../assets/man2.jpeg";
-// import {motion} from 'framer-motion';
-import { FiDownload } from "react-icons/fi";
 
 const bgGrains = {
   backgroundImage: `url(${Grains})`,
@@ -39,7 +38,7 @@ const Banner = () => {
                 <button className="btn text-xs py-3 md:text-base">
                   know more
                 </button>
-                <button className="btn-outline text-xs md:text-base flex items-center gap-2 md:py-3">
+                <button className="border border-white/50 rounded-lg px-4 text-xs md:text-base flex items-center gap-2 md:py-3">
                   <FiDownload /> Download Resume
                 </button>
               </div>
